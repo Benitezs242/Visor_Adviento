@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: alerta-calendario
+    runtime: docker
+    plan: free
+    envVars:
+      - key: ACCESS_KEY
+        generateValue: true
+      - key: WHATSAPP_PHONE
+        sync: false
+      - key: WHATSAPP_APIKEY
+        sync: false
